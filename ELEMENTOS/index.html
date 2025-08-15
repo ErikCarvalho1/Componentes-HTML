@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamneto de Produtos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Gerenciamneto de Produtos</h1>
+      </header>
+      <main>
+        <!-- Tabela -->
+        <section class="tabela-produto-container">
+          <h2>Lista de Produtos</h2>
+          <div class="tabela-responsiva">
+            <div class="tabela-produtos">
+             <table>
+             <tbody>
+                <!-- inicia a tabela -->
+                <thead>
+                <!-- define o cabeçalhoo da tabela -->
+                <th>ID</th>
+                <th>Nome do Produto</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Ações</th>
+                </thead>
+                <table>
+                <!-- define o corpo da tabela -->
+                <tr>
+                    <!-- TR linhas  -->
+                    <td>1</td>
+                    <!-- TD colunas na linha  -->
+                    <td>Smartphone X</td>
+                    <td>R$ 1.500,00</td>
+                    <td>50</td>
+                    <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <!-- TR linhas  -->
+                    <td>2</td>
+                    <!-- TD colunas na linha  -->
+                    <td>Notebook</td>
+                    <td>R$ 2.500,00</td>
+                    <td>80</td>
+                    <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+        
+                <tr>
+                    <!-- TR linhas  -->
+                    <td>3</td>
+                    <!-- TD colunas na linha  -->
+                    <td>Computador Itel i5 12gn</td>
+                    <td>R$ 9.670,00</td>
+                    <td>2</td>
+                    <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-excluir">Excluir</button>
+                    </td>
+                </tr>
+           
+             </tbody>
+            </div>
+          </table>
+            </div>
+            
+          </div>
+        </section>
+   
+        <!-- Formmulario -->
+        <section >
+            <h2>Adicionar / Editar Produtos</h2>
+            <form  id="formulario-prodruto" class="formulario-produto">
+                <div class="campo-form">
+                    <label for="nome-produto"> Nome Produto:
+                        <input type="text" id="nome-produto " name="nome-produto" required />
+                
+                 </label>
+                </div>
+                <div class="campo-form">
+                    <label for="preco-produto">Preço:
+                        <input type="number" id="preco-produto" name="preco-produto" min="0" step="0.01" required/>
+                
+                 </label>
+                </div>
+                <div class="campo-form"><label for="estoque-estoque"
+                    >Estoque  <input type="number" id="estoque-produto" name="estoque-produto" min="0" required/>
+                
+                 </label>
+                </div>
+                <div class="campo-form"><label for="descricao-produto">Descrição:
+                   <textarea id="descricao-produto " name="descricao-produto" rows="4"></textarea>
+
+                 </label> 
+                </div>
+                <div class="campo-form">
+                    <button type="submit" class="bnt-salvar">Salvar Produtos</button>
+                    <button type="submit" class="bnt-limpar">Limpar</button>
+                
+                
+                </div>
+            </form>
+        </section>
+    </main>
+      <footer>
+        <p>&copy; 2025 sistemas Produtos</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url(reset.css); */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'Roboto' , sans-serif;
+    background-color: aliceblue;
+    color: #333;
+    line-height: 1.6;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+main{
+    padding: 20px;
+}
+section{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom:20px ;
+
+}
+h2{
+    color: #007bff;
+    border-bottom: 2px solid #e0e0e0;
+    border-bottom: 20px;
+    padding-bottom: 10px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.tabela-responsiva{
+    overflow-x: auto ;
+
+}
+.tabela-produtos{
+    width: 100%;
+     border-collapse: collapse;
+    min-width: 600px;
+}
+
+.tabela-produtos th, .tabela-produtos td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #4d4d4d;
+
+
+}
+.tabela-produtos thead{
+    background-color: #007bff;
+    COLOR: #fff;
+}
+.tabela-produtos tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+.tabela-produtos tbody tr:hover{
+    background-color: #f1f1f1;
+    /* cursor: pointer */
+}
+.btn-editar, .btn-excluir{
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn-editar{
+    background-color: #34a6db;
+    margin-right: 5px;
+}
+.btn-excluir{
+    background-color: #df4d4d;
+    margin-right: 5px;
+}
+.btn-editar:hover{
+    opacity: 0.85;
+
+}
+.btn-excluir:hover{
+     opacity: 0.9;
+
+}
+
+
+/* estilo do formualrio */
+.formulario-produto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 10px;
+}
+.campo-form{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+
+}
+.campo-form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.campo-form input, .campo-form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+.campo-form textarea{
+    resize: vertical;
+}
+.campo-form input:focus, .campo-form  textarea:focus{
+    background-color: #a6adbbab;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 89, 255, 0.63);
+}
+
+.bnt-salvar , .bnt-limpar{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.bnt-salvar {
+    background-color: #34a6db;
+    margin-right: 10px;
+
+}
+.bnt-limpar{
+    background-color: #fc5151;
+    margin-right: 10px;
+    
+} 
+.bnt-salvar:hover, .bnt-limpar:hover{
+    opacity: 0.9;
+}
